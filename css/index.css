@@ -87,7 +87,7 @@
 
         .info2{
             width: 90%;
-            height: auto;
+            height: 152rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -99,7 +99,6 @@
 
         .info2 img {
             width: 90%;
-            margin-top: 2rem;
             border-radius: 1.2rem;
         } 
 
@@ -188,4 +187,92 @@
         .datos .asis{
             margin-top: 3rem;
         }
-}
+
+        .botones{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            margin-top: 2.5rem;
+        }
+
+        .botones button {
+                min-width: 13rem;
+                height: 4rem;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                position: relative;
+                display: inline-block;
+                outline: none;
+                border-radius: 2rem;
+                border: 0.2rem solid #495057;
+                background: #495057;
+              }
+              
+              .botonoes button:hover {
+                background: #fff;
+                color: #495057
+              }
+
+              .temporizador {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                border-radius: 0.8rem;
+                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+                padding: 2rem;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+            
+            .tiempo {
+                margin: 0 1.5rem;
+                text-align: center;
+            }
+            
+            .tiempo span {
+                font-size: 2rem;
+                font-weight: bold;
+                color: #333;
+            }
+            
+            .unidad {
+                font-size: 0.75rem;
+                color: #666;
+            }
+
+            .footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #f1f1f1;
+            }
+            
+            .footer p {
+                margin: 5px 0;
+            }
+            
+            .footer a {
+                color: #007BFF; /* Color del enlace */
+                text-decoration: none;
+            }
+            
+            .footer a:hover {
+                text-decoration: underline;
+            }
+
+            body {
+                -webkit-user-select: none; /* Safari */
+                -moz-user-select: none;    /* Firefox */
+                -ms-user-select: none;     /* Internet Explorer/Edge */
+                user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
+            }
+            
+        }
+
+
