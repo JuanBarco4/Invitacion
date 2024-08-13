@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body oncontextmenu="return false;">
 
     <div class="bienvenida"> 
         <img src="img/Portada.jpeg" class="portada">
@@ -46,7 +46,7 @@
             <span>Karina Gómez Vega</span>
         </div>
         <br> <br>
-        <span>Queremos que seas parte de esta celebración !Estas invitado¡</span>
+        <span>Queremos que seas parte de esta celebración ¡Estas invitado!</span>
         </div>
     </div>
     
@@ -73,8 +73,37 @@
             <i class="fa-solid fa-users"></i>
             <span>Queremos que esta celebración también la disfrutes tanto como nosotros, por eso hemos decidido no extender la invitación a los niños.</span>
             <span class="asis">Confirmar asistencia antes del 15 de noviembre para que encuentres tu numero de mesa el día del evento.</span>
+            <div class="botones">
+                <button>¡Confirmo!</button>
+                <button>¡No asistire!</button>
+            </div>
         </div>
     </div>
+
+    <div class="temporizador">
+        <div class="tiempo">
+            <span id="dias">00</span>
+            <div class="unidad">Días</div>
+        </div>
+        <div class="tiempo">
+            <span id="horas">00</span>
+            <div class="unidad">Horas</div>
+        </div>
+        <div class="tiempo">
+            <span id="minutos">00</span>
+            <div class="unidad">Minutos</div>
+        </div>
+        <div class="tiempo">
+            <span id="segundos">00</span>
+            <div class="unidad">Segundos</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Todos los derechos reservados.</p>
+        <p>Diseñado por <a href="https://www.instagram.com/juanpa.barco?igsh=Nmt2ZWQ5YWppdWUy" target="_blank">Juan Barco</a><a href="https://www.instagram.com/rigo.cg08?igsh=MWJtcXBla2RjcXBiaw==" target="_blank"> y Rigoberto Castellanos</a></p>
+    </footer>
+    
 
 
 <script type="text/javascript" src="./js/jslider.js"></script>	
