@@ -1,6 +1,4 @@
-/*Autor: Jorge García Castro*/
- 	/*Cargador de eventos al iniciar la página*/
-     window.addEventListener('load',iniciar,false);
+   window.addEventListener('load',iniciar,false);
 
      /*Contador inicializado en cero*/
      var contador=0;
@@ -61,3 +59,31 @@
          }
          
      }
+
+
+     const cuentaRegresivaFecha = new Date("November 30, 2024 00:00:00").getTime();
+
+     const temporizador = setInterval(() => {
+         const ahora = new Date().getTime();
+         const distancia = cuentaRegresivaFecha - ahora;
+     
+         const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+         const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+         const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+     
+         document.getElementById("dias").innerText = dias.toString().padStart(2, '0');
+         document.getElementById("horas").innerText = horas.toString().padStart(2, '0');
+         document.getElementById("minutos").innerText = minutos.toString().padStart(2, '0');
+         document.getElementById("segundos").innerText = segundos.toString().padStart(2, '0');
+     
+         if (distancia < 0) {
+             clearInterval(temporizador);
+             document.querySelector('.temporizador').innerHTML = "¡Tiempo Agotado!";
+         }
+     }, 1000);
+
+
+     document.addEventListener('copy', function(e) {
+        e.preventDefault();
+    });
