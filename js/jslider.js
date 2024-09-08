@@ -1,10 +1,11 @@
-   window.addEventListener('load',iniciar,false);
+
+     window.addEventListener('load',iniciar,false);
 
      /*Contador inicializado en cero*/
      var contador=0;
 
      function iniciar(){
-         setInterval('cambiarImg()',5000);
+         setInterval('cambiarImg()',3000);
      }
 
         var obj=document.getElementById('slider');
